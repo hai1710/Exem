@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = prompt('nhập str1:');
+    let str2 = prompt('nhập str2');
+    let a = checkStr(str1,str2);
+    document.write(a)
+
+    function checkStr(str1, str2) {
+        for (let i = 0; i < str2.length; i++) {
+            for (let j = 0; j < str1.length; j++) {
+                if (str2[i + j] !== str1[j]) {
+                    break
+                }
+                if (j === str1.length - 1 && str2[i + j] === str1[j]) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
+</script>
+</body>
+</html>

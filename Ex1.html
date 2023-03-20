@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Check() {
+        let arr = [5, 3, 6, 9, 10, 5, 8];
+        let max = 0;
+        let max2 = 0
+        let max3 = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]
+            }
+        }
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > max2 && arr[j] != max) {
+                max2 = arr[j]
+            }
+        }
+        for (let m = 0; m < arr.length; m++) {
+            if (arr[m] > max3 && arr[m] != max && arr[m] != max2) {
+                max3 = arr[m]
+            }
+        }
+        return max3;
+    }
+    d
+    document.write(Check())
+</script>
+</body>
+</html>
